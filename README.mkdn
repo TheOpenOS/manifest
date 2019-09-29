@@ -7,19 +7,19 @@ Getting started
 To get started with Android/LineageOS, you'll need to get
 familiar with Repo and [Version Control with Git](https://source.android.com/source/version-control.html).
 
-Install repo:
-```
-sudo apt install repo
+### Sync ###
+
+```bash
+# Installing repo
+$ sudo apt install repo
+
+# Initialize local repository
+$ repo init -u git://github.com/TheOpenOS/manifest -b pie
+
+# Sync
+$ repo sync --force-sync --no-clone-bundle --no-tags
 ```
 
-To initialize your local repository using the LineageOS trees, use a command like this:
-```
-repo init -u git://github.com/TheOpenOS/manifest -b pie
-```
-Then to sync up:
-```
-repo sync repo sync --force-sync --no-clone-bundle --no-tags
-```
 ### Build ###
 
 ```bash
