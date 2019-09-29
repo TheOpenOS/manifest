@@ -18,15 +18,13 @@ repo init -u git://github.com/TheOpenOS/manifest -b pie
 ```
 Then to sync up:
 ```
-repo sync
+repo sync repo sync --force-sync --no-clone-bundle --no-tags
 ```
 
 Then build:
 ```
+# Set up environment 
 . build/envsetup.sh
-```
-
-And:
-```
+# Build
 brunch "your device codename"
 ```
