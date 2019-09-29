@@ -14,7 +14,7 @@ familiar with Repo and [Version Control with Git](https://source.android.com/sou
 $ sudo apt install repo
 
 # Initialize local repository
-$ repo init -u git://github.com/TheOpenOS/manifest -b pie
+$ repo init -u https://github.com/TheOpenOS/manifest -b pie
 
 # Sync
 $ repo sync --force-sync --no-clone-bundle --no-tags
