@@ -20,11 +20,13 @@ Then to sync up:
 ```
 repo sync repo sync --force-sync --no-clone-bundle --no-tags
 ```
+### Build ###
 
-Then build:
-```
-# Set up environment 
-. build/envsetup.sh
+```bash
+
+# Set up environment
+$ . build/envsetup.sh
+
 # Build
-brunch "your device codename"
+$ brunch $your_device_codename
 ```
